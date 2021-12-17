@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../image/image.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    padding: 30px 100px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    font-size: 20px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul li {
+    list-style: none;
+    padding: 20px;
+}
+
+.navbar ul li:first-child {
+    padding-left: 0;
+}
+
+.navbar ul li:last-child {
+    padding-right: 0;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #7c7c7c;
+    text-transform: uppercase;
+}
+
+.navbar ul li a:hover {
+    color: #bfbbbb;
+}
+/*End header*/
+.content {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-text {
+    font-size: 70px;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 100px;
+}
+
+.button-play {
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    transition: transform 0.6s;
+    padding-left: 15px;
+}
+
+.button:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.button-dir {
+    display: flex;
+    justify-content: space-between;
+}
+.btn img{
+    width: 50px;
+}
+.btn-next img {
+    transform: rotateY(180deg);
+}
+.disable {
+    opacity: 20%;
+    pointer-events: none;
+}
