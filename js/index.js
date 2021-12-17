@@ -21,7 +21,7 @@ var current = 2;
 
 function init(){
     titleMusic.innerHTML = listMusics[current].title;
-    music.src = `../mp3/${listMusics[current].src}`
+    music.src = `./mp3/${listMusics[current].src}`
     if (current === 0) {
         btnPrev.classList.add('disable')
     }
@@ -39,16 +39,16 @@ icon.onclick = changeIcon;
 function changeIcon() {
     if (music.paused) {
         music.play();
-        icon.src = "../image/pause.png";
+        icon.src = "./image/pause.png";
     } else {
         music.pause();
-        icon.src = "../image/play.png";
+        icon.src = "./image/play.png";
     }
 }
 
 function play(name) {
     titleMusic.innerHTML = listMusics[current].title;
-    music.src = `../mp3/${name}`
+    music.src = `./mp3/${name}`
     changeIcon();
 }
 
