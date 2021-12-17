@@ -9,48 +9,49 @@
     <link rel="stylesheet" href="style/index.css">
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="container">
-            <div class="header">
-                <div class="logo">
-                    <img src="image/logo.png" alt="">
-                </div>
-                <div class="navbar">
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Product</a></li>
-                        <li><a href="">About me</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
-                </div>
+<div class="container-fluid">
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="image/logo.png" alt="">
             </div>
-            <!--        End Header-->
-            <div class="content">
-                <div class="content-text">
-                    <p>LISTEN<br>THE<br>REAL<br>SOUND</p>
-                </div>
-                <div class="controls">
-                    <div  class="button-play">
-                        <p>Click here</p>
-                        <div class="button">
-                            <img src="image/play.png" alt="" id="icon">
-                        </div>
-                    </div>
-                    <div class="button-dir">
-                        <div class="btn btn-prev">
-                            <img src="image/prev.png" alt="">
-                        </div>
-                        <div class="btn btn-next">
-                            <img src="image/prev.png" alt="">
-                        </div>
-                    </div>
-                </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Product</a></li>
+                    <li><a href="">About me</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
             </div>
-            <audio id="music">
-                <source src="" type="audio/mp3">
-            </audio>
         </div>
+        <!--        End Header-->
+        <div class="content">
+            <div class="content-text">
+                <p class="title-music"></p>
+                <div class="process">
+                    <input id="range" type="range" value="0">
+                    <label for="range" id="value"></label>
+                </div>
+            </div>
+            <div class="controls">
+                <div class="button-play">
+                    <div class="btn btn-prev">
+                        <img src="image/prev.png" alt="">
+                    </div>
+                    <div class="button">
+                        <img src="image/play.png" alt="" id="icon">
+                    </div>
+                    <div class="btn btn-next">
+                        <img src="image/prev.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <audio id="music">
+            <source src="" type="audio/mp3">
+        </audio>
     </div>
-    <script src="js/index.js"></script>
+</div>
+<script src="js/index.js"></script>
 </body>
 </html>

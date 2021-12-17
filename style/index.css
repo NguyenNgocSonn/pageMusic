@@ -3,6 +3,14 @@
     padding: 0;
     font-family: sans-serif;
 }
+:root {
+    --deg: 5deg;
+    --base: #43c2af;
+    --second: #7e8bc6;
+    --trackball: var(--base);
+    --range: 0%;
+    --bg: #10252f;
+}
 
 body {
     height: 100vh;
@@ -52,6 +60,7 @@ body {
 .navbar ul li a:hover {
     color: #bfbbbb;
 }
+
 /*End header*/
 .content {
     padding-top: 100px;
@@ -74,7 +83,7 @@ body {
 
 .button {
     transition: transform 0.6s;
-    padding-left: 15px;
+
 }
 
 .button:hover {
@@ -82,17 +91,17 @@ body {
     cursor: pointer;
 }
 
-.button-dir {
-    display: flex;
-    justify-content: space-between;
-}
-.btn img{
+
+.btn img {
     width: 50px;
 }
+
 .btn-next img {
     transform: rotateY(180deg);
 }
+
 .disable {
     opacity: 20%;
     pointer-events: none;
 }
+
